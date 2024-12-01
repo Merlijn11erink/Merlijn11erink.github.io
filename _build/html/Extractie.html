@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Extractie';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -383,7 +385,9 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leerdoelen">Leerdoelen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#voorkennis">Voorkennis</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#het-proces-van-extractie">Het proces van Extractie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-van-extractie">Principe van Extractie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vaste-stof-vloeistof-extractie">Vaste stof/vloeistof extractie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vloeistof-vloeistof-extractie">Vloeistof/vloeistof extractie</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#praktijkvoorbeelden">Praktijkvoorbeelden</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#opgaven">Opgaven</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practica">Practica</a></li>
@@ -413,9 +417,25 @@ document.write(`
 <h2>Voorkennis<a class="headerlink" href="#voorkennis" title="Link to this heading">#</a></h2>
 <p>Scheidingsmethoden berusten altijd op een verschil in stofeigenschap om de stoffen te separeren. Wanneer een stof oplost worden er altijd bindingen verbroken tussen de stof, en nieuwe bindingen gevormd tussen de stof en het oplosmiddel. De oplosbaarheid, hoe goed een stof in een specifiek oplosmiddel oplost, is afhankelijk van de bindingen die de stof met het oplosmiddel kan vormen.</p>
 </section>
-<section id="het-proces-van-extractie">
-<h2>Het proces van Extractie<a class="headerlink" href="#het-proces-van-extractie" title="Link to this heading">#</a></h2>
+<section id="principe-van-extractie">
+<h2>Principe van Extractie<a class="headerlink" href="#principe-van-extractie" title="Link to this heading">#</a></h2>
 <p>Extractie is een scheidingsmethode die berust op een verschil in oplosbaarheid. Tijdens extractie lossen een deel van de stoffen wel op in het extractiemiddel, en een deel niet.</p>
+</section>
+<section id="vaste-stof-vloeistof-extractie">
+<h2>Vaste stof/vloeistof extractie<a class="headerlink" href="#vaste-stof-vloeistof-extractie" title="Link to this heading">#</a></h2>
+<p>Bij dit type extractie worden stoffen uit een vast mengsel van elkaar gescheiden op basis van hun oplosbaarheid in het extractiemiddel. Welke stoffen er wel en niet oplossen wordt bepaald door de polariteit van de stof en die van het extractiemiddel.</p>
+<p>Verbindingen kunnen polair of apolair zijn. Een polaire verbinding heeft een kant die een beetje positief geladen is en een kant die een beetje negatief geladen is. Hierdoor is er een positieve pool en een negatieve pool binnen de moleculen van de stof. Een apolaire verbinding heeft geen positieve en negatieve pool. Polaire stoffen kunnen een extra binding aan gaan, de dipool-dipool binding. Ieder molecuul bevat namelijk twee polen, de positieve pool bindt zich aan de negatieve pool van een ander molecuul. Hoe polair een stof is wordt uitgedrukt in het dipoolmoment (in Cm), hoe groter het dipoolmoment, hoe meer polair de stof is.</p>
+<p>Polaire stoffen lossen goed in elkaar op omdat ze dezelfde typen bindingen met elkaar kunnen aangaan. Apolaire stoffen lossen daarom ook goed in elkaar op. Maar een apolaire stof lost niet goed op in een polaire stof, net als een polaire stof niet goed oplost in een apolaire stof. De polaire stoffen blijven door hun dipool-dipool binding aan elkaar, ze laten pas los als ze nieuwe dipool-dipool bindingen kunnen vormen. Apolaire stoffen kunnen alleen vanderwaalsbindingen vormen.</p>
+</section>
+<section id="vloeistof-vloeistof-extractie">
+<h2>Vloeistof/vloeistof extractie<a class="headerlink" href="#vloeistof-vloeistof-extractie" title="Link to this heading">#</a></h2>
+<p>Bij dit type extractie worden opgeloste stoffen van elkaar gescheiden doordat bepaalde stoffen zich gedeeltelijk verplaatsen naar het extractiemiddel. Hierbij zal een evenwicht ontstaan tussen de molariteit van de opgeloste stof in de beginvloeistof en de molariteit van diezelfde stof in het extractriemiddel. In een formule geven we dat zo weer:</p>
+<p>K<sub>c</sub>= <span class="math notranslate nohighlight">\( \frac{[opgeloste\, stof(extractiemiddel)]}{[opgeloste\, stof(beginvloeistof)]}\)</span></p>
+<p>Een vereiste voor dit type extractie is dat de beginvloeistof en het extractiemiddel niet een stabiel mengsel vormen.</p>
+<p>Omdat slechts een deel van de stoffen naar het extractiemiddel verplaatst, kan je een hogere opbrengst bereiken door de extractie meerdere keren te herhalen met schoon extractiemiddel. De formule voor de opbrengst na n aantal keer extraheren is:</p>
+<p><span class="math notranslate nohighlight">\(
+g_n=g_0(\frac{V_{H_2O}}{K_c\times V_{org}+V_{H_2O}})^n
+\)</span></p>
 </section>
 <section id="praktijkvoorbeelden">
 <h2>Praktijkvoorbeelden<a class="headerlink" href="#praktijkvoorbeelden" title="Link to this heading">#</a></h2>
@@ -494,7 +514,9 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leerdoelen">Leerdoelen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#voorkennis">Voorkennis</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#het-proces-van-extractie">Het proces van Extractie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-van-extractie">Principe van Extractie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vaste-stof-vloeistof-extractie">Vaste stof/vloeistof extractie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vloeistof-vloeistof-extractie">Vloeistof/vloeistof extractie</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#praktijkvoorbeelden">Praktijkvoorbeelden</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#opgaven">Opgaven</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practica">Practica</a></li>

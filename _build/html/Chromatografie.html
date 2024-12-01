@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Chromatografie';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -385,7 +387,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#voorkennis">Voorkennis</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soorten-chromatografie">Soorten Chromatografie</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-van-chromatografie">Principe van Chromatografie</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#het-proces-van-chromatografie">Het proces van Chromatografie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#het-proces-van-chromatografie">Het proces van Chromatografie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dunne-laag-en-papierchromatografie">Dunne laag en papierchromatografie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kolomchromatografie">Kolomchromatografie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gaschromatografie">Gaschromatografie</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#praktijkvoorbeelden">Praktijkvoorbeelden</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#opgaven">Opgaven</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practica">Practica</a></li>
@@ -427,7 +434,7 @@ document.write(`
 <h2>Principe van Chromatografie<a class="headerlink" href="#principe-van-chromatografie" title="Link to this heading">#</a></h2>
 <p>Chromatografie is een scheidingsmethode die berust op het verschil in aanhechtingsvermogen van een stof aan de mobiele fase en aan de stationaire fase ten opzichte van een andere stof.</p>
 <p>Je zou dit kunnen vergelijken met een winkelstraat met een loopband, een horizontale roltrap. Stel je zet een groep stereotypische mannen en vrouwen op de loopband, en de winkels in deze straat verkopen vooral make-up, kleding en knipbeurten, dan zullen de vrouwen meer aangetrokken zijn om de winkels in te gaan dan de mannen. Als de winkels vooral elektronica en gereedschap verkopen dan zullen de mannen meer aangetrokken zijn om de winkels in te gaan. Hierdoor ontstaat er een scheiding over tijd.</p>
-<p>In bovenstaand voorbeeld is de loopband de mobiele fase en de winkels de stationaire fase.</p>
+<p>In bovenstaand voorbeeld is de loopband de mobiele fase en de winkels de stationaire fase. Hoe lang de mannen en vrouwen erover doen om naar het eind van de loopband te komen noemen we de retentietijd.</p>
 </section>
 <section id="het-proces-van-chromatografie">
 <h2>Het proces van Chromatografie<a class="headerlink" href="#het-proces-van-chromatografie" title="Link to this heading">#</a></h2>
@@ -439,7 +446,7 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>papierchromatografie</p></td>
+<tr class="row-even"><td><p>Papierchromatografie</p></td>
 <td><p>papier</p></td>
 <td><p>vloeistof</p></td>
 </tr>
@@ -451,13 +458,36 @@ document.write(`
 <td><p>suspensie van een vaste stof in de loopvloeistof</p></td>
 <td><p>vloeistof</p></td>
 </tr>
-<tr class="row-odd"><td><p>gaschromatografie</p></td>
+<tr class="row-odd"><td><p>Gaschromatografie</p></td>
 <td><p>vaste stof of vloeistof vast op een drager</p></td>
 <td><p>gas</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<section id="dunne-laag-en-papierchromatografie">
+<h3>Dunne laag en papierchromatografie<a class="headerlink" href="#dunne-laag-en-papierchromatografie" title="Link to this heading">#</a></h3>
+<p>bij dunne laag en papiechromatografie is er geen retentietijd, de stoffen stoppen op een bepaald punt tussen hun startpositie en het vloeistoffront. Daarom gebruiken bij deze twee typen chromatografie de retardatiefactor.</p>
+<p><span class="math notranslate nohighlight">\(
+R_f=\frac{loopafstand\,\,stof}{loopafstand\,\,vloeistoffront}
+\)</span></p>
+<p>Iedere stof heeft een unieke R<sub>f</sub> waarde bij een bepaalde loopvloeistof. Als je deze waarde bij een practicum bepaalt hebt, kun je bepalen welke stof er in het mengsel zat.</p>
+</section>
+<section id="kolomchromatografie">
+<h3>Kolomchromatografie<a class="headerlink" href="#kolomchromatografie" title="Link to this heading">#</a></h3>
+<p>Voor kolomchromatografie wordt een kolom gepakt met de gewenste stationaire fase. Er zijn verschillende manieren voor het pakken van de kolom, maar het gewenste resultaat moet een kolom zijn die alleen gevuld is met de loopvloeistof en de gekozen stationaire fase. Er moeten zo min mogelijk luchtbellen in de kolom zitten en het liefst ook een gelijke verdeling van de stationaire fase.</p>
+<p>Bij kolomchromatografie noemen we de loopvloeistof ook wel de eleuns. Elutie is namelijk een specifieke techniek die hierbij gebruikt kan worden. Elutie is het doorlaten lopen van een monsteroplossing door de kolom terwijl er steeds nieuw eluens wordt bijgevoegd. De delen van de monsteroplossing raken van elkaar gescheiden door het verschil in aanhechting aan de mobiele en stationaire fase. Stoffen die het meest aan de mobiele fase hechten en het minst aan de stationaire fase zullen het eerst uit de kolom komen. In tegenstelling tot Dunne laag en papierchromatografie kunnen we bij kolomchromatografie deze verschillende delen opvangen en verder onderzoeken.</p>
+</section>
+<section id="gaschromatografie">
+<h3>Gaschromatografie<a class="headerlink" href="#gaschromatografie" title="Link to this heading">#</a></h3>
+<figure class="align-default" id="gaschromatograaf">
+<a class="reference internal image-reference" href="_images/figuur-8.png"><img alt="_images/figuur-8.png" src="_images/figuur-8.png" style="width: 657px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">gaschromatograaf: machine voor gaschromatografie</span><a class="headerlink" href="#gaschromatograaf" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Deze scheidingsmethode is met name geschikt voor het scheiden van organische stoffen die makkelijk verdampen. In een gaschromatograaf wordt een monster ingebracht bij een verwarmingselement die het monster doet verdampen zodat die meegenomen kan worden door de gasstroom in de kolom. Met gaschromatografie kan je goed een kwantitatieve analyse uitvoeren, zo wordt het octaangehalte in benzine met deze scheindingsmethode bepaalt.</p>
+</section>
 </section>
 <section id="praktijkvoorbeelden">
 <h2>Praktijkvoorbeelden<a class="headerlink" href="#praktijkvoorbeelden" title="Link to this heading">#</a></h2>
@@ -538,7 +568,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#voorkennis">Voorkennis</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soorten-chromatografie">Soorten Chromatografie</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principe-van-chromatografie">Principe van Chromatografie</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#het-proces-van-chromatografie">Het proces van Chromatografie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#het-proces-van-chromatografie">Het proces van Chromatografie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dunne-laag-en-papierchromatografie">Dunne laag en papierchromatografie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kolomchromatografie">Kolomchromatografie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gaschromatografie">Gaschromatografie</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#praktijkvoorbeelden">Praktijkvoorbeelden</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#opgaven">Opgaven</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practica">Practica</a></li>
