@@ -352,7 +352,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -368,6 +370,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copyright">Copyright</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#afbeeldingen">Afbeeldingen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding">Embedding</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -379,6 +391,98 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lions">
 <h1>LioNS<a class="headerlink" href="#lions" title="Link to this heading">#</a></h1>
+<p>Benodigdheden</p>
+<ul class="simple">
+<li><p>Visual Studio Code</p></li>
+<li><p>Github account</p></li>
+<li><p>Github app</p></li>
+<li><p>Laptop (Windows, MacOS of Linux)</p></li>
+</ul>
+<p>Ondersteunende Bronnen:
+NVOX nr.7 2024: <a class="reference external" href="https://www.nvon.nl/nvox/nvox-2024-7-geheel">https://www.nvon.nl/nvox/nvox-2024-7-geheel</a> (als student aan de lerarenopleiding natuur- of scheikunde, kun je gratis lid worden)
+TU Delft voorbeeldboek: <a class="reference external" href="https://books.open.tudelft.nl/home/catalog/book/187">https://books.open.tudelft.nl/home/catalog/book/187</a>
+Jupyter book documentatie: <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">https://jupyterbook.org/en/stable/intro.html</a></p>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading">#</a></h2>
+<p>Bij vragen over copyright tijdens je studie kun je naar het mediacentrum van jouw opleidingsinstelling. Onderstaande overzicht is gebaseerd op informatie van het mediacentrum van Hogeschool Windesheim.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Bron van materiaal</p></th>
+<th class="head"><p>voorbeeld</p></th>
+<th class="head"><p>copyright situatie</p></th>
+<th class="head"><p>Mag je het gebruiken?</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Volledig Zelfgemaakte Afbeeldingen</p></td>
+<td><p>niet nagetekend van iets, volledig origineel.</p></td>
+<td><p>Mag altijd worden gebruikt. Auteursrecht ligt bij jou.</p></td>
+<td><p>Ja</p></td>
+</tr>
+<tr class="row-odd"><td><p>Afbeeldingen gemaakt door AI</p></td>
+<td><p>afbeelding gegenereerd door MidJourney</p></td>
+<td><p>Mag altijd worden gebruikt. AI heeft geen auteursrechten.</p></td>
+<td><p>Ja</p></td>
+</tr>
+<tr class="row-even"><td><p>Zelfgemaakte foto’s</p></td>
+<td><p>foto die je zelf maakt</p></td>
+<td><p>Mag gebruikt worden behalve als er personen in staan. Dit valt onder portretrecht, je hebt eerst toestemming nodig van ieder persoon op de foto.</p></td>
+<td><p>Ja*</p></td>
+</tr>
+<tr class="row-odd"><td><p>Aangepaste afbeeldingen</p></td>
+<td><p>Nagetekend van iets met aanpassingen</p></td>
+<td><p>Valt onder citaatrecht en telt als parafraseren, mag gebruikt worden indien je weinig gebruikt van de bron én de bron vermeldt.</p></td>
+<td><p>Ja*</p></td>
+</tr>
+<tr class="row-even"><td><p>Afbeelding gemaakt door een ander onder een CC-licentie</p></td>
+<td><p>afbeeldingen die je online kan vinden met een zoekmachine door te zoeken op licentie.</p></td>
+<td><p>Auteursrecht blijft behouden aan de maker, maar onder de voorwaarden van de licentie mag je het gebruiken, zoals naamsvermelding.</p></td>
+<td><p>Ja*</p></td>
+</tr>
+<tr class="row-odd"><td><p>Afbeelding gemaakt door een onbekende maker onder een onbekende licentie</p></td>
+<td><p>Veel afbeeldingen online</p></td>
+<td><p>Auteursrecht blijft behouden aan de maker, omdat de maker onbekend is kun je geen toestemming vragen, maar ook nier voldoen aan de licentie. Dit mag je niet gebruiken.</p></td>
+<td><p>Nee</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>*Let op de voorwaarden die gelden voor het gebruik</p>
+<p>Als je afbeeldingen toch wilt gebruiken, kun je het beste gebruik maken van een embedded link naar de afbeelding. Zie Afbeeldingen voor meer informatie.</p>
+</section>
+<section id="afbeeldingen">
+<h2>Afbeeldingen<a class="headerlink" href="#afbeeldingen" title="Link to this heading">#</a></h2>
+<p>Afbeeldingen voeg je in door in een markdown cel deze structuur neer te zetten:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
+{figure} link.naar.afbeelding.com
+---
+width: aantal px
+name: naam
+Alt: voor screenreaders of als de afbeelding niet getoond kan worden
+---
+Onderschrift
+```
+</pre></div>
+</div>
+<p>In plaats van een link naar de afbeelding, kan je ook een folder binnen je project aanmaken, en dan het pad naar de afbeelding invullen. Vanwege copyright is het handiger om een link aan te houden, dit telt als embedding, en maakt het dat je alle afbeeldingen zou mogen gebruiken. Volgens het mediacentrum van het Windesheim: “De auteurswet stelt dat een embedded link – een link waarbij de inhoud al getoond wordt zoals bijv. met een YouTube video – op zichzelf geen inbreuk kan maken op het auteursrecht. Dus als je linkt op die pagina naar een andere site op internet waar dat gifje staat, omzeil je het mogelijke probleem.”.</p>
+<p>Naast hoe breed de afbeelding word getoond en welke naam het heeft kan je nog meer eigenschappen bepalen, zie: <a class="reference external" href="https://jupyterbook.org/en/stable/content/figures.html#figure-parameters">https://jupyterbook.org/en/stable/content/figures.html#figure-parameters</a></p>
+</section>
+<section id="embedding">
+<h2>Embedding<a class="headerlink" href="#embedding" title="Link to this heading">#</a></h2>
+<p>Voor de inhoud van een website hoef je niet alles zelf te maken, met name interactieve elementen zijn moeilijk om te maken, terwijl ze veel toegevoegde waarde kunnen hebben. Embedding maakt het mogelijk om delen van een andere website op te nemen in jouw online lesmateriaal. Stel dat je een Phet klaar wil plaatsen in je website, dan ga je naar de website van de Phet en klik je op embedding, dat kan bij naam genoemd worden of met deze symbolen: &lt;/&gt;
+Dan kopieer je de code, en deze kun je plakken in je jupyterbook. Als je een nieuwe cel hiervoor aanmaakt, houdt het nog steeds op markdown, anders werkt het niet.</p>
+<p>Een aantal voorbeelden van wat je kan embedden:</p>
+<ul class="simple">
+<li><p>Phet’s <iframe src="https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_en.html"
+      width="800"
+      height="600"
+      allowfullscreen></p></li>
+</ul>
+</iframe>
+- Microsoft forms voor bijvoorbeeld opdrachten.
+- Youtube video’s
+- Educaplay spellen, dit is een platform waarop je als docent educatieve spellen kan maken.
+- Sketchfab 3D Modellen <div class="sketchfab-embed-wrapper"> <iframe title="Xenotime (YPO4)" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9d2314620aa8410483d1ad4cbddfa08b/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/xenotime-ypo4-9d2314620aa8410483d1ad4cbddfa08b?utm_medium=embed&utm_campaign=share-popup&utm_content=9d2314620aa8410483d1ad4cbddfa08b" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Xenotime (YPO4) </a> by <a href="https://sketchfab.com/merlijn11erink?utm_medium=embed&utm_campaign=share-popup&utm_content=9d2314620aa8410483d1ad4cbddfa08b" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> merlijn11erink </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=9d2314620aa8410483d1ad4cbddfa08b" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -426,6 +530,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copyright">Copyright</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#afbeeldingen">Afbeeldingen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding">Embedding</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
